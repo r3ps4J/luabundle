@@ -110,7 +110,7 @@ export function processModule(module: Module, options: RealizedOptions, processe
 				content: moduleContent
 			}, options, processedModules)
 		} catch (e) {
-			throw new ModuleBundlingError(resolvedModule.name, e)
+			throw new ModuleBundlingError(resolvedModule.name, e as Error)
 		}
 	}
 }
