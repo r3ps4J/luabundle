@@ -31,7 +31,7 @@ function intersectionDiff<Set extends object>(a: Set, subset: RecursivePartial<S
 		if (setValue !== undefined && subsetValue !== undefined && setValue !== subsetValue) {
 			if (setValue
 				&& typeof setValue === 'object'
-				&& !(setValue instanceof Array)
+				&& !(setValue as any instanceof Array)
 				&& subsetValue
 				&& typeof subsetValue === 'object'
 				&& !(subsetValue instanceof Array)) {
