@@ -1,4 +1,4 @@
-import {version} from '../package.json'
+const version = "1.5.0"
 
 import {defaultOptions as defaultBundleOptions, RealizedOptions as BundleOptions} from '../bundle/options'
 

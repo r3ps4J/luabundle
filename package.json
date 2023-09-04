@@ -12,8 +12,6 @@
 		"@types/node": "^13.7.2",
 		"eslint": "^6.8.0",
 		"fs-extra": "^8.1.0",
-		"klaw-sync": "^6.0.0",
-		"rimraf": "^3.0.2",
 		"typescript": "^3.7.5"
 	},
 	"engines": {
@@ -28,13 +26,12 @@
 		"bundling"
 	],
 	"license": "MIT",
-	"main": "index.js",
+	"main": "dist/index.js",
 	"repository": "Benjamin-Dobell/luabundle",
 	"scripts": {
-		"build": "node scripts/build.js",
-		"prepack": "node scripts/prepack.js",
+		"prepare": "tsc && node scripts/postbuild.js",
 		"posttest": "eslint . --config .eslintrc",
 		"test": "echo NO TESTS"
 	},
-	"types": "index.d.ts"
+	"types": "dist/index.d.ts"
 }
