@@ -1,5 +1,5 @@
-import {CallExpression, Expression, FunctionDeclaration, Node, StringCallExpression} from 'moonsharp-luaparse'
-import {Chunk} from 'moonsharp-luaparse'
+import {CallExpression, Expression, FunctionDeclaration, Node, StringCallExpression} from 'luaparse'
+import {Chunk} from 'luaparse'
 
 export type RequireExpression = CallExpression | StringCallExpression
 
