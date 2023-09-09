@@ -54,6 +54,7 @@ export function processModule(module: Module, options: RealizedOptions, processe
 			locations: true,
 			luaVersion: options.luaVersion,
 			ranges: true,
+			encodingMode: "pseudo-latin1",
 		})
 
 		reverseTraverseRequires(ast, expression => {
